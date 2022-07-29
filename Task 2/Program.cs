@@ -54,13 +54,13 @@ namespace Task_2
                 switch (currency)
                 {
                     case "USD":
-                        Console.WriteLine("Result of rhe operation is {0}", conv2.RUBUSD);
+                        Console.WriteLine("Result of rhe operation is {0:f2}", conv2.RUBUSD);
                         break;
                     case "EUR":
-                        Console.WriteLine("Result of rhe operation is {0}", conv2.RUBEUR);
+                        Console.WriteLine("Result of rhe operation is {0:f2}", conv2.RUBEUR);
                         break;
                     case "GRV":
-                        Console.WriteLine("Result of rhe operation is {0}", conv2.RUBGRV);
+                        Console.WriteLine("Result of rhe operation is {0:f2}", conv2.RUBGRV);
                         break;
                 }
             }
