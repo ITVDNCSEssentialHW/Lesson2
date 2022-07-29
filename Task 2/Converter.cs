@@ -17,47 +17,47 @@ namespace Task_2
             this.grv = grv;
         }
 
-        private double GRVtoUSD()
+        private double RUBtoUSD()
         {
-            return grv / usd;
+            return rub / usd;
         }
-        private double GRVtoEUR()
+        private double RUBtoEUR()
         {
-            return grv / eur;
+            return rub / eur;
         }
-        private double GRVtoRUB()
+        private double RUBtoGRV()
         {
-            return grv / rub;
+            return rub / grv;
         }
         
-        public Converter(double usd, double eur, double rub, double currencyVol, bool sell)
+        public Converter(double usd, double eur, double grv, double currencyVol, bool sell)
         {
             this.usd = usd;
             this.eur = eur;
-            this.rub = rub;
+            this.grv = grv;
             this.currencyVol = currencyVol;
             this.sell = true;
         }
 
-        private double USDtoGRV()
+        private double USDtoRUB()
         {
             return currencyVol * usd;
         }
-        private double EURtoGRV()
+        private double EURtoRUB()
         {
             return currencyVol * eur;
         }
-        private double RUBtoGRV()
+        private double GRVtoRUB()
         {
-            return currencyVol * rub;
+            return currencyVol * grv;
         }
         //Buy
-        public double GRVUSD { get { return GRVtoUSD(); } }
-        public double GRVEUR { get { return GRVtoEUR(); } }
-        public double GRVRUB { get { return GRVtoRUB(); } }
-        //Sell
-        public double USDGRV { get { return USDtoGRV(); } }
-        public double EURGRV { get { return EURtoGRV(); } }
+        public double RUBUSD { get { return RUBtoUSD(); } }
+        public double RUBEUR { get { return RUBtoEUR(); } }
         public double RUBGRV { get { return RUBtoGRV(); } }
+        //Sell
+        public double USDRUB { get { return USDtoRUB(); } }
+        public double EURRUB { get { return EURtoRUB(); } }
+        public double GRVRUB { get { return GRVtoRUB(); } }
     }
 }
